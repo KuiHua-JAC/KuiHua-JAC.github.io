@@ -12,5 +12,7 @@ export default function Container({
   className?: string;
   children: ReactNode;
 }) {
-  return <div className={`p-4 ${className} rounded-2xl`}>{children}</div>;
+  return (
+    <div className={`p-4 my-8 ${className} rounded-2xl w-full`}>{children}</div>
+  );
 }

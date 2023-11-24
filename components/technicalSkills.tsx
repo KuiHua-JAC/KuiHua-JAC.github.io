@@ -65,6 +65,7 @@ const options = {
     },
     {
       name: "Web Technologies",
+      color: "#18206F",
       data: [
         { value: 80, name: "HTML" },
         { value: 70, name: "CSS" },
