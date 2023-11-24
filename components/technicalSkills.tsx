@@ -1,10 +1,13 @@
 import Highcharts from "highcharts"; //core
 import HighchartsReact from "highcharts-react-official";
 import HC_more from "highcharts/highcharts-more"; //module
+import HighchartsExporting from "highcharts/modules/exporting";
 
 if (typeof Highcharts === "object") {
+  HighchartsExporting(Highcharts);
   HC_more(Highcharts);
 }
+
 const options = {
   title: {
     text: "Technical skills",
