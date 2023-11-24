@@ -13,6 +13,8 @@ export default function Container({
   children: ReactNode;
 }) {
   return (
-    <div className={`p-4 my-8 ${className} rounded-2xl w-full`}>{children}</div>
+    <div className={`lg:p-4 my-8 ${className} rounded-2xl w-full`}>
+      {children}
+    </div>
   );
 }

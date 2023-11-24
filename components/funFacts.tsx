@@ -3,7 +3,7 @@ import Container from "./container";
 
 export default function FunFacts() {
   return (
-    <Container className="border border-primary flex shadow-lg px-4 w-2/3 justify-center">
+    <Container className="border border-primary flex shadow-lg px-4 lg:w-2/3 py-4 justify-center">
       <ul className="flex flex-col justify-center items-center">
         <li className="w-full">
           🚗 Electric car enthusiast. Have a question? Let me charge up and get

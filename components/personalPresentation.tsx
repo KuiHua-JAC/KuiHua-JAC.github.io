@@ -6,7 +6,7 @@ export default function PersonalPresentation() {
   return (
     <Container>
       <div className="w-full flex flex-col justify-center items-center mb-8">
-        <ProfilePicture className={"w-72 h-72"} />
+        <ProfilePicture className={"lg:w-72 lg:h-72 w-48 h-48"} />
       </div>
       <div className="text-center">
         <Typewriter

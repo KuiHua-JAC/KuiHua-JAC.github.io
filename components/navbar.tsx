@@ -18,7 +18,7 @@ export default function Navbar() {
     <nav className="bg-secondary border-gray-200">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <span className="self-center text-3xl font-semibold whitespace-nowrap text-primary font-serif">
+          <span className="self-center lg:text-3xl font-semibold whitespace-nowrap text-primary font-serif">
             Kui Hua Wang
           </span>
         </a>

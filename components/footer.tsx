@@ -1,15 +1,15 @@
 export default function Footer() {
   return (
     <footer className="bg-secondary ">
-      <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <div className="w-full mx-auto max-w-screen-xl p-4 flex items-center justify-between">
         <span className="text-sm text-primary sm:text-center">
           © 2023{" "}
           <a href="/" className="hover:underline hover:text-tertiary">
             Kui Hua Wang™
           </a>
         </span>
-        <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-primary sm:mt-0">
-          <div className="flex mt-4 items-end align-bottom justify-center sm:mt-0">
+        <ul className="flex flex-wrap align-middle items-center lg:mt-3 text-sm font-medium text-primary sm:mt-0">
+          <div className="flex lg:mt-4 items-center align-middle justify-center mt-0">
             <a
               href="https://github.com/KuiHua-JAC"
               className="text-primary hover:text-tertiary ms-5"

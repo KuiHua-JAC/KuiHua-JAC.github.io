@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en" className="bg-tertiary">
       <body>
         <Navbar />
-        <div className="flex min-h-screen flex-col items-center justify-between p-24 bg-tertiary">
+        <div className="flex min-h-screen flex-col items-center justify-between lg:p-24 p-8 bg-tertiary">
           {children}
         </div>
         <Footer />
