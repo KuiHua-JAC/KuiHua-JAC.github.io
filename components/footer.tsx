@@ -8,8 +8,8 @@ export default function Footer() {
             Kui Hua Wang™
           </a>
         </span>
-        <ul className="flex flex-wrap align-middle items-center lg:mt-3 text-sm font-medium text-primary sm:mt-0">
-          <div className="flex lg:mt-4 items-center align-middle justify-center mt-0">
+        <ul className="flex flex-wrap align-middle items-center text-sm font-medium text-primary sm:mt-0">
+          <div className="flex items-center align-middle justify-center">
             <a
               href="https://github.com/KuiHua-JAC"
               className="text-primary hover:text-tertiary ms-5"
