@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 // https://blog.logrocket.com/3-ways-implement-typing-animation-react/
-export default function Typewriter({
+export default function AnimatedText({
   text,
   delay,
   className,
