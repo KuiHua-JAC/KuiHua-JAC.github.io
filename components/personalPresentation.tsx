@@ -1,5 +1,5 @@
-import Typewriter from "./animatedText";
 import Container from "./container";
+import Typewriter from "./animatedText";
 import ProfilePicture from "./profilePicture";
 
 export default function PersonalPresentation() {
