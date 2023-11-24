@@ -10,8 +10,27 @@ export default function PersonalPresentation() {
       </div>
       <div className="text-center">
         <Typewriter
-          text="Welcome to my personal website, my presentation is coming soon..."
-          delay={100}
+          text="Welcome to my personal website. I'm a third year, soon to graduate, computer science student at John Abbott College."
+          delay={50}
+          className="text-secondary font-bold"
+        />
+        <Typewriter
+          text="I am someone with a strong passion for solving logical problems and learning new technologies to continually challenge
+          myself."
+          delay={50}
+          className="text-secondary font-bold"
+        />
+        <Typewriter
+          text="Knowing we only live once, I aim to bring value to the table, whether it's in my day-to-day life or in my
+          working environment."
+          delay={50}
+          className="text-secondary font-bold"
+        />
+        <Typewriter
+          text="Eager to learn new technologies and ways of solving problems. Seeking a position in
+          software development."
+          delay={50}
+          className="text-secondary font-bold"
         />
       </div>
     </Container>

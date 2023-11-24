@@ -4,9 +4,11 @@ import React, { useState, useEffect } from "react";
 export default function Typewriter({
   text,
   delay,
+  className,
 }: {
   text: string;
   delay: number;
+  className: string;
 }) {
   const [currentText, setCurrentText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,5 +24,5 @@ export default function Typewriter({
     }
   }, [currentIndex, delay, text]);
 
-  return <span>{currentText}</span>;
+  return <p className={`${className}`}>{currentText}</p>;
 }
