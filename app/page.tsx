@@ -1,3 +1,10 @@
+"use client";
+import AboutMe from "@/components/aboutme";
+
 export default function Home() {
-  return <div className="text-primary">maiddnsd</div>;
+  return (
+    <>
+      <AboutMe />
+    </>
+  );
 }

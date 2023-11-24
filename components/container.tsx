@@ -1,0 +1,16 @@
+import { ReactNode } from "react";
+
+/**
+ * Container to uniformize the padding and other styling properties
+ * @param param0 extra styling to use in the container
+ * @returns
+ */
+export default function Container({
+  className = "",
+  children,
+}: {
+  className?: string;
+  children: ReactNode;
+}) {
+  return <div className={`p-4 ${className} rounded-2xl`}>{children}</div>;
+}
