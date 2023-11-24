@@ -1,4 +1,4 @@
-import Typewriter from "./AnimatedText";
+import Typewriter from "./animatedText";
 import Container from "./container";
 import ProfilePicture from "./profilePicture";
 

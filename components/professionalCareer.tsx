@@ -27,7 +27,7 @@ export default function ProfessionalCareer() {
   return (
     <Container>
       <div className="flex flex-row">
-        <div className="w-1/2 flex flex-col justify-center items-center rounded-2xl mr-4 border-4 border-primary bg-secondary">
+        <div className="w-1/2 flex flex-col justify-center items-center ">
           <h2 className="text-primary font-bold text-4xl mb-8">Career</h2>
           <a
             href="/resume.pdf"
