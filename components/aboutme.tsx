@@ -4,17 +4,8 @@ import Container from "./container";
 
 export default function AboutMe() {
   return (
-    <Container className="border border-primary flex gap-x-4 shadow-lg w-2/3">
-      <div className="w-1/2 flex flex-col justify-center items-center text-4xl font-bold gap-y-4">
-        <Image
-          src="/profilepic.jpeg"
-          alt="Profile picture of website author"
-          width={724}
-          height={1086}
-          className="rounded-full h-48 w-48 object-cover object-top border-4 border-primary shadow-lg"
-        />
-      </div>
-      <ul className="w-1/2 list-disc flex flex-col justify-center items-center gap-y-4">
+    <Container className="border border-primary flex shadow-lg px-4 w-2/3 justify-center">
+      <ul className="list-disc flex flex-col justify-center items-center">
         <li className="w-full">
           Electric car enthusiast. Have a question? Let me charge up and get to
           you!🚗

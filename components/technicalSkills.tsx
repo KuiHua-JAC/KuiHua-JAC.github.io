@@ -1,10 +1,8 @@
-import Highcharts from "highcharts"; //core
+import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
-import HC_more from "highcharts/highcharts-more"; //module
-import HighchartsExporting from "highcharts/modules/exporting";
+import HC_more from "highcharts/highcharts-more";
 
 if (typeof Highcharts === "object") {
-  HighchartsExporting(Highcharts);
   HC_more(Highcharts);
 }
 
@@ -12,6 +10,9 @@ const options = {
   title: {
     text: "Technical skills",
     align: "center",
+    style: {
+      color: "#D4AF37",
+    },
   },
   tooltip: {
     useHTML: true,
@@ -29,58 +30,67 @@ const options = {
         style: {
           color: "black",
           textOutline: "none",
-          fontWeight: "normal",
+          fontWeight: "bold",
+          size: "18px",
         },
+        className: "text-normal lg:text-lg",
       },
-      minSize: "50%",
+      minSize: "10%",
       maxSize: "150%",
     },
   },
   series: [
     {
       name: "Programming Languages",
+      color: "#D4AF37",
       data: [
-        { value: 80, name: "C#" },
-        { value: 70, name: "Java" },
+        { value: 90, name: "C#" },
+        { value: 75, name: "Java" },
         { value: 80, name: "JavaScript" },
-        { value: 50, name: "Python" },
+        { value: 30, name: "Python" },
         { value: 50, name: "Bash" },
         { value: 70, name: "TypeScript" },
-        { value: 70, name: "Kotlin" },
-        { value: 60, name: "PHP" },
+        { value: 60, name: "Kotlin" },
+        { value: 50, name: "PHP" },
       ],
     },
     {
-      name: "Frameworks",
+      name: "App technologies",
       data: [
         { value: 70, name: "WPF" },
-        { value: 70, name: "React" },
-        { value: 75, name: "React Native" },
-        { value: 20, name: "Angular" },
-        { value: 40, name: "Astro" },
-        { value: 40, name: "NestJS" },
-        { value: 30, name: "Jinja" },
-        { value: 70, name: "Node.js" },
+        { value: 65, name: "React Native" },
+        { value: 65, name: "Expo" },
+        { value: 65, name: "Compose" },
       ],
     },
     {
       name: "Web Technologies",
       data: [
         { value: 80, name: "HTML" },
-        { value: 60, name: "CSS" },
+        { value: 70, name: "CSS" },
         { value: 75, name: "Tailwind" },
+        { value: 70, name: "React" },
+        { value: 30, name: "NestJS" },
+        { value: 40, name: "Express" },
+        { value: 50, name: "Jinja" },
+        { value: 70, name: "Node.js" },
+        { value: 10, name: "Angular" },
+        { value: 30, name: "NextJS" },
+        { value: 50, name: "Astro" },
       ],
     },
     {
       name: "Database Technologies",
       data: [
-        { value: 70, name: "SQL" },
+        { value: 75, name: "SQL" },
+        { value: 75, name: "NoSQL" },
         { value: 60, name: "MongoDB" },
-        { value: 60, name: "SQLAlchemy" },
+        { value: 50, name: "SQLAlchemy" },
+        { value: 70, name: "EFCore" },
       ],
     },
     {
-      name: "Testing Tools",
+      name: "Testing",
       data: [
         { value: 30, name: "Cypress" },
         { value: 30, name: "Jest" },
@@ -89,14 +99,14 @@ const options = {
       ],
     },
     {
-      name: "Methodologies and Tools",
+      name: "Methodologies",
       data: [
-        { value: 80, name: "Agile methodologies" },
-        { value: 70, name: "Jira" },
+        { value: 70, name: "Agile methodologies" },
+        { value: 60, name: "Jira" },
         { value: 80, name: "Trello" },
-        { value: 80, name: "CI/CD" },
+        { value: 60, name: "CI/CD" },
         { value: 80, name: "Flowcharts" },
-        { value: 70, name: "Figma" },
+        { value: 60, name: "Figma" },
       ],
     },
   ],
@@ -108,6 +118,7 @@ export default function TechnicalSkills() {
       highcharts={Highcharts}
       options={options}
       constructorType={"chart"}
+      containerProps={{ className: "w-full h-screen lg:h-[800px] p-4 mb-8" }}
     />
   );
 }
