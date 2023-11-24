@@ -1,4 +1,4 @@
-import AnimatedText from "./animatedText";
+import AnimatedText from "./animation";
 import Container from "./container";
 import ProfilePicture from "./profilePicture";
 
