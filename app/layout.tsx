@@ -15,11 +15,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="bg-tertiary">
-      <Navbar />
-      <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-tertiary">
-        {children}
-      </main>
-      <Footer />
+      <body>
+        <Navbar />
+        <div className="flex min-h-screen flex-col items-center justify-between p-24 bg-tertiary">
+          {children}
+        </div>
+        <Footer />
+      </body>
     </html>
   );
 }
