@@ -8,20 +8,21 @@ import Container from "./container";
 export default function GithubRepos({ username }: { username: string }) {
   const [repos, setRepos] = useState<any>([]);
 
-  async function fetchData() {
-    try {
-      const response = await request("GET /users/{username}/repos", {
-        username: `${username}`,
-        type: "owner",
-      });
-      console.log(response);
-      setRepos(response.data); // Assuming the response has a `data` property
-    } catch (error) {
-      console.error("Error fetching GitHub repositories:", error);
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await request("GET /users/{username}/repos", {
+          username: `${username}`,
+          type: "owner",
+        });
+        console.log(response);
+        setRepos(response.data); // Assuming the response has a `data` property
+      } catch (error) {
+        console.error("Error fetching GitHub repositories:", error);
+      }
     }
-  }
-
-  fetchData();
+    fetchData();
+  }, []);
 
   return (
     <Container>

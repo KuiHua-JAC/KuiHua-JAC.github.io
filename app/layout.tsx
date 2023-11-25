@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
-import Loading from "./portfolio/loading";
 import { Suspense } from "react";
 import React from "react";
 
