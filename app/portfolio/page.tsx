@@ -1,4 +1,7 @@
 "use client";
+
+import GithubRepos from "@/components/githubRepos";
+
 export default function Portfolio() {
-  return <>Portfolio</>;
+  return <GithubRepos username="KuiHua-JAC" />;
 }

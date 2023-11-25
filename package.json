@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@octokit/request": "^8.1.6",
+    "@octokit/types": "^12.3.0",
     "framer-motion": "^10.16.5",
     "highcharts": "^11.2.0",
     "highcharts-react-official": "^3.2.1",
