@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import Loading from "./portfolio/loading";
+import { Suspense } from "react";
+import React from "react";
 
 export const metadata: Metadata = {
   title: "Kui Hua Wang",
@@ -14,14 +17,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-tertiary">
-      <body>
-        <Navbar />
-        <div className="flex min-h-screen flex-col items-center justify-between lg:p-24 p-8 bg-tertiary">
-          {children}
-        </div>
-        <Footer />
-      </body>
-    </html>
+    <React.StrictMode>
+      <html lang="en" className="bg-tertiary">
+        <body>
+          <Navbar />
+
+          <div className="flex min-h-screen flex-col items-center justify-between lg:p-24 p-8 bg-tertiary">
+            {children}
+          </div>
+
+          <Footer />
+        </body>
+      </html>
+    </React.StrictMode>
   );
 }

@@ -23,12 +23,12 @@ export default function Navbar() {
           </span>
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <Link
-            href="/contact-me"
+          <button
+            type="button"
             className="text-primary bg-secondary hover:bg-primary border-2 hover:text-secondary border-primary focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-sm px-4 py-2 text-center"
           >
             Contact me
-          </Link>
+          </button>
           <button
             data-collapse-toggle="navbar-cta"
             type="button"
@@ -36,14 +36,7 @@ export default function Navbar() {
             aria-controls="navbar-cta"
             aria-expanded="false"
           >
-            <button
-              onClick={() => {
-                alert("Feature coming soon...");
-              }}
-              className="sr-only"
-            >
-              Open main menu
-            </button>
+            <span className="sr-only">Open main menu</span>
             <svg
               className="w-5 h-5"
               aria-hidden="true"
