@@ -25,13 +25,13 @@ export default function GithubRepos({ username }: { username: string }) {
   }, []);
 
   return (
-    <Container>
+    <Container className="grid grid-cols-1 gap-x-4">
       <Suspense fallback={<div>Loading...</div>}>
         {repos.map((repo: any) => (
           <SingleRepo
             key={repo.id}
             id={repo.id}
-            url={repo.url}
+            url={repo.html_url}
             description={repo.description}
             full_name={repo.full_name}
           />
