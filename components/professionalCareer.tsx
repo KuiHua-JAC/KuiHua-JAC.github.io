@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Container from "./container";
 
 export default function ProfessionalCareer() {
@@ -29,12 +30,20 @@ export default function ProfessionalCareer() {
       <div className="flex flex-row">
         <div className="w-1/2 flex flex-col justify-center items-center ">
           <h2 className="text-primary font-bold text-4xl mb-8">Career</h2>
-          <a
-            href="/resume.pdf"
-            className="border-2 hover:border-primary rounded-2xl py-2 px-4 hover:text-primary hover:bg-secondary bg-primary border-secondary text-secondary"
-          >
-            View resume
-          </a>
+          <div className="flex flex-col lg:flex-row gap-x-2 gap-y-2">
+            <a
+              href="/resume.pdf"
+              className="border-2 hover:border-primary rounded-2xl py-2 px-4 hover:text-primary hover:bg-secondary bg-primary border-secondary text-secondary"
+            >
+              View resume
+            </a>
+            <Link
+              href="/portfolio"
+              className="border-2 hover:border-primary rounded-2xl py-2 px-4 hover:text-primary hover:bg-secondary bg-primary border-secondary text-secondary"
+            >
+              View portfolio
+            </Link>
+          </div>
         </div>
         <ol className="relative border-s border-secondary w-1/2">
           {experiences.map((item, index) => (
